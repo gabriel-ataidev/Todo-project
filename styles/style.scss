@@ -12,6 +12,7 @@ body{
 }
 header{
     font-size: 1.5rem;
+    padding-top: 6rem;
 }
 header, form{
     min-height: 20vh;
@@ -77,4 +78,7 @@ form button{
             }
         }
     }
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
 }
