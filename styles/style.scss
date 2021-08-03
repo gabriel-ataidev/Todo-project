@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(120deg, #386292, rgb(95, 241, 229));
+    background-image: linear-gradient(120deg, #0c0e69, rgb(15, 110, 139), rgb(95, 241, 229));
     color: white;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
@@ -90,4 +90,32 @@ form button{
 .fall{
     transform: translateX(4rem);
     opacity: 0;
+}
+select{
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    color: #0c0e69;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1.1rem;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: "\25BC";
+        position: absolute;
+        color: #0c0e69;
+        top: 0;
+        right: 2%;
+        padding: 1rem;
+        pointer-events: none;
+        transition: all 0.6s ease-in-out;
+    }
+    &:hover::after{
+        color: rgb(38, 184, 228);
+    }
 }

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #386292, #5ff1e5);
+  background-image: linear-gradient(120deg, #0c0e69, #0f6e8b, #5ff1e5);
   color: white;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
@@ -130,5 +130,40 @@ form button:hover {
   -webkit-transform: translateX(4rem);
           transform: translateX(4rem);
   opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  color: #0c0e69;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1.1rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  color: #0c0e69;
+  top: 0;
+  right: 2%;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.select:hover::after {
+  color: #26b8e4;
 }
 /*# sourceMappingURL=style.css.map */
